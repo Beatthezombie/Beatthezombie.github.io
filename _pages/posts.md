@@ -1,9 +1,11 @@
+---
 layout: archive
 permalink: /posts/
 title: "Posts by Tags"
 author_profile: true
 header:
     image: "/images/sh_example.png"
+---
 
 {% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
