@@ -3,8 +3,6 @@ layout: archive
 permalink: /posts/
 title: "Posts by Tags"
 author_profile: true
-header:
-    image: "/images/sh_example.png"
 ---
 
 

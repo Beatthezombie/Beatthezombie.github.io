@@ -1,8 +1,7 @@
 ---
 title: "About"
 permalink: /about/
-header:
-    image: "/images/sh_example.png"
+layout: single
 ---
 
 I'm beatthezombie.
