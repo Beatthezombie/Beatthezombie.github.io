@@ -23,10 +23,7 @@
         let user = document.createElement( 'a' );
         user.setAttribute( 'href', response.user.url );
         user.classList.add( 'user' );
-    
-        let userAvatar = document.createElement( 'img' );
-        userAvatar.classList.add( 'avatar' );
-        userAvatar.setAttribute( 'src', response.user.avatar_url );
+
     
         user.appendChild( userAvatar );
     
@@ -37,7 +34,7 @@
     
         let commentContents = document.createElement( 'div' );
         commentContents.classList.add( 'comment-content' );
-        commentContents.innerHTML = response.body;
+        commentContents.innerHTML = marked( response.body );
     
         let comment = document.createElement( 'li' );
         comment.setAttribute( 'data-created', response.created_at );
@@ -58,6 +55,5 @@
     <div class="github-comments">
         <h2>Comments</h2>
         <ul id="gh-comments-list"></ul>
-        <p id="no-comments-found">No comments found for this post.</p>
         <p id="leave-a-comment">Join the discussion for this post on <a href="https://github.com/Beatthezombie/beatthezombie.github.io/issues/{{ page.comments_id }}">this ticket</a>. Comments appear on this page instantly.</p>
     </div>
