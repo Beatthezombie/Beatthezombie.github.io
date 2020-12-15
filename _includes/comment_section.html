@@ -24,6 +24,12 @@
         user.setAttribute( 'href', response.user.url );
         user.classList.add( 'user' );
     
+        let userAvatar = document.createElement( 'img' );
+        userAvatar.classList.add( 'avatar' );
+        userAvatar.setAttribute( 'src', response.user.avatar_url );
+    
+        user.appendChild( userAvatar );
+    
         let commentLink = document.createElement( 'a' );
         commentLink.setAttribute( 'href', response.html_url );
         commentLink.classList.add( 'comment-url' );
