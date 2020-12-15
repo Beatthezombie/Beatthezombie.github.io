@@ -86,4 +86,9 @@ layout: default
       </div>
     </div>
   {% endif %}
+
+  {% if page.comments_id %}
+    {% include comment_section.html %}
+  {% endif %}
+
 </div>
