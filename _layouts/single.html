@@ -42,7 +42,11 @@ layout: default
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+
+        {% if page.comments_id %}{% include comment_section.html %}{% endif %}
       </section>
+
+      
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
@@ -50,13 +54,13 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
         {% include page__date.html %}
+
+        
       </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+      
 
-      {% if page.comments_id %}
-        {% include comment_section.html %}
-      {% endif %}
+      {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
     </div>
