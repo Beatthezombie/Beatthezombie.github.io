@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Computer Graphics, Rendering and Math"
+title                    : "Computer Graphics, Software Development and Math"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Beatthezombie"
-description              : "A collection of posts about computer graphics, rendering and math."
+description              : "A collection of posts about computer graphics, software development and math."
 url                      : "https://beatthezombie.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Beatthezombie/beatthezombie.github.io"
