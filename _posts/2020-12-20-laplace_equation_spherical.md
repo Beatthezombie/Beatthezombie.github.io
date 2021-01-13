@@ -7,14 +7,14 @@ mathjax: "true"
 comments_id: 2
 ---
 
-## Table of Contents
+# Table of Contents
 
 1. [Summary](#summary)
 2. [Spherical Coordinates](#spherical_coordinates)
 3. [Transforming to Spherical Coordinates](#transform)
 4. [Table of Derivatives](#derivatives)
 
-## Summary <a name="summary"></a>
+# Summary <a name="summary"></a>
 
 Laplace's equation is a second order elliptic partial differential equation defined in cartesian coordinates as:
 
@@ -29,12 +29,12 @@ Where $f = f(x,y,z)$ is a real-valued function and twice differentiable. Solutio
 This post will explain how to derive Laplace's equation in spherical coordinates:
 
 $$
-\Delta f = \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial f}{\partial r} \right)  + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \frac{\partial f}{\partial \theta} \right) + \frac{1}{r^2 \sin^2 \theta} \frac{\partial^2 f}{\partial \varphi^2}
+\Delta f = \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial f}{\partial r} \right)  + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial f}{\partial \theta} \right) + \frac{1}{r^2 \sin^2 \theta} \frac{\partial^2 f}{\partial \varphi^2}
 $$
 
 $~$
 
-## Spherical Coordinates <a name="spherical_coordinates"></a>
+# Spherical Coordinates <a name="spherical_coordinates"></a>
 
 To go from cartesian coordinates to spherical coordinates we need the following transform:
 
@@ -60,7 +60,7 @@ r &= \sqrt{x^2 + y^2 + z^2} \\
 \end{align}
 $$
 
-## Transforming to Spherical Coordinates <a name="transform"></a>
+# Transforming to Spherical Coordinates <a name="transform"></a>
 
 The first step is to use the chain rule on the equation in cartesian coordinates.
 
@@ -154,16 +154,16 @@ $$
 Which can be simplified to:
 
 $$
-\Delta f = \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial f}{\partial r} \right)  + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \frac{\partial f}{\partial \theta} \right) + \frac{1}{r^2 \sin^2 \theta} \frac{\partial^2 f}{\partial \varphi^2}
+\Delta f = \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial f}{\partial r} \right)  + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial f}{\partial \theta} \right) + \frac{1}{r^2 \sin^2 \theta} \frac{\partial^2 f}{\partial \varphi^2}
 $$
 
 $~$
 
 $~$
 
-## Table of Derivatives <a name="derivatives"></a>
+# Table of Derivatives <a name="derivatives"></a>
 
-### Second-order derivatives in terms of first-order derivatives with mixed terms
+## Second-order derivatives in terms of first-order derivatives with mixed terms
 
 $$
 \frac{\partial^2f}{\partial x^2} = \frac{\partial}{\partial x} \left( \frac{\partial f}{\partial x} \right) = \frac{\partial r}{\partial x} \frac{\partial}{\partial r} \left( \frac{\partial f}{\partial x}  \right) + \frac{\partial \theta}{\partial x} \frac{\partial}{\partial \theta} \left( \frac{\partial f}{\partial x}  \right)  \frac{\partial \varphi}{\partial x} \frac{\partial}{\partial \varphi} \left( \frac{\partial f}{\partial x}  \right) 
@@ -178,7 +178,7 @@ $$
 $$
 
 
-### First-order cartesian derivatives of $f$ in terms of spherical derivatives
+## First-order cartesian derivatives of $f$ in terms of spherical derivatives
 
 
 $$
@@ -193,7 +193,7 @@ $$
 
 $$
 
-### Second-order mixed derivatives
+## Second-order mixed derivatives
 
 $$
 
@@ -281,7 +281,7 @@ $$
 \end{align}
 $$
 
-## References
+# References
 - [https://en.wikipedia.org/wiki/Laplace%27s_equation]()
 
  
